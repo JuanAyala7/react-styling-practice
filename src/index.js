@@ -6,23 +6,23 @@ let time = date.getHours();
 
 let greetings;
 
-let customeColor = {
+let customColor = {
   color: ""
 };
 
 if (time > 0 && time <= 12) {
   greetings = "Good Morning";
-  customeColor.color = "red";
+  customColor.color = "red";
 } else if (time > 12 && time <= 18) {
   greetings = "Good Afternoon";
-  customeColor.color = "green";
+  customColor.color = "green";
 } else {
   greetings = "Good Evening";
-  customeColor.color = "blue";
+  customColor.color = "blue";
 }
 
 ReactDOM.render(
-  <h1 className="heading" style={customeColor}>
+  <h1 className="heading" style={customColor}>
     {greetings}
   </h1>,
   document.getElementById("root")
