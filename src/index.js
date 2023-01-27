@@ -6,8 +6,8 @@ let time = date.getHours();
 
 let greetings;
 
-let customColor = {
-  color: ""
+const customColor = {
+  color: " "
 };
 
 if (time > 0 && time <= 12) {
